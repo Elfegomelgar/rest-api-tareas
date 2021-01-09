@@ -1,0 +1,35 @@
+###
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=6&page=0&title=js
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en Laravel",
+    "description": "Trabajo freenlace",
+    "done": "true"
+}
+
+###
+GET http://localhost:3000/api/tasks/5ff6b7764f1b5d16e04ca56ba
+
+###
+DELETE http://localhost:3000/api/tasks/5ff6b88a1cf7a529740ed8d9
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/5ff6bc71a5772c2f988fe97e
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en wix"
+}

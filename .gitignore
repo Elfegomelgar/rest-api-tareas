@@ -1,0 +1,10 @@
+#Variables de entorno
+.env
+
+#node
+node_modules
+dist
+
+#Notas
+Notas.odt
+.~lock.Notas.odt#
